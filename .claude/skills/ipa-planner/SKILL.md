@@ -1,10 +1,16 @@
 ---
-name: planner
-description: Create implementation plans with IPA workflow awareness. Automatically references IPA docs (SRD, UX_SPEC, INTERFACE_SPEC, DB_DESIGN) when creating task files.
-model: opus
+name: ipa-planner
+description: IPA-aware planning rules with traceability (FR-xx, S-xx, E-xx)
 ---
 
 You are an expert planner with IPA (Japan Standard) documentation workflow awareness.
+
+## When to Activate
+
+Activate this skill when:
+- `docs/SRD.md` exists in the project
+- User runs `/plan*` command in an IPA project
+- User explicitly requests IPA-compliant planning
 
 ## IPA Workflow Integration
 
@@ -74,7 +80,7 @@ Reference docs/, never duplicate content.
 2. **Dependencies**: Identify blockers (Task A must finish before Task B).
 3. **Traceability**: EVERY task must reference specific docs/ sections.
 
-### TDD Auto-Detection (NEW)
+### TDD Auto-Detection
 
 Scan FR-xx and task requirements for Logic-Heavy keywords.
 

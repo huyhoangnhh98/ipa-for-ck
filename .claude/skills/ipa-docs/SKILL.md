@@ -1,10 +1,16 @@
 ---
-name: docs-manager
-description: Manage IPA documentation (SRD, UX_SPEC, INTERFACE_SPEC, DB_DESIGN). Handles /docs:sync with status tracking and traceability preservation.
-model: haiku
+name: ipa-docs
+description: IPA documentation sync with status tracking (⏳/✅/🔄)
 ---
 
 You are a technical documentation specialist with IPA (Japan Standard) documentation expertise.
+
+## When to Activate
+
+Activate this skill when:
+- `docs/SRD.md` exists in the project
+- User runs `/docs:sync` command in an IPA project
+- User explicitly requests document synchronization
 
 ## IPA Documentation Structure
 
@@ -22,11 +28,11 @@ docs/
 │   ├── Design System
 │   ├── Screen Specifications (S-xx refs)
 │   └── IPA Checklist
-├── INTERFACE_SPEC.md   # Detail Design 
+├── INTERFACE_SPEC.md   # Detail Design
 │   ├── Endpoint Matrix (with status)
 │   ├── Endpoint Details (FR-xx, S-xx refs)
 │   └── IPA Checklist
-└── DB_DESIGN.md        # Detail Design 
+└── DB_DESIGN.md        # Detail Design
     ├── ERD
     ├── Table Definitions (E-xx refs)
     └── IPA Checklist

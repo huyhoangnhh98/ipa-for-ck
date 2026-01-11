@@ -108,6 +108,33 @@ Product: Can be used by real users
 4. **Concierge MVP** - Manual before automating
 5. **Technical Spike** - Prove feasibility
 
+## Phase Breakdown Rules
+
+When creating phase breakdown in /lean output:
+
+### Phase Sizing
+
+| Features | Recommended Phases | Note |
+|----------|-------------------|------|
+| 1-3 P1 features | 1 phase | Simple MVP |
+| 4-6 P1 features | 2 phases | Core → Enhancement |
+| 7+ P1 features | 3+ phases | Consider re-scoping |
+
+### Layer Detection
+
+Based on feature types, suggest layers:
+- API/Backend heavy → core.md
+- UI/Frontend heavy → ui.md
+- Data processing → data.md
+- Both equally → core.md + ui.md
+
+### Phase Naming Convention
+
+```
+phase-01-{focus}  # e.g., phase-01-core, phase-01-auth
+phase-02-{focus}  # e.g., phase-02-enhancement
+```
+
 ## Integration with IPA
 
 ### Mapping Lean → IPA

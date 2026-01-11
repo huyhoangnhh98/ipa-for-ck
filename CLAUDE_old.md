@@ -18,15 +18,17 @@ User Research (optional)
     ↓
 Idea + User Insights
     ↓
-/lean [idea] → MVP Analysis + GATE 1
+/lean [idea] → MVP Requirements (data-informed)
     ↓
-/ipa:spec → docs/SRD.md + docs/UI_SPEC.md + GATE 2
+/ipa:srd [MVP] → docs/SRD.md
     ↓
-/ipa:design → prototypes/html-mockups/ + GATE 3
+/ipa:bd → docs/UI_SPEC.md (with design rationale from research)
+    ↓
+/ipa:dd → docs/API_SPEC.md, docs/DB_DESIGN.md
+    ↓
+/ipa:design → prototypes/html-mockups/
     ↓
 /ipa:mockup-analyze → docs/UI_DESIGN_SPEC.md
-    ↓
-/ipa:detail → docs/API_SPEC.md, docs/DB_DESIGN.md
     ↓
 /plan → /code → /docs:sync
     ↓
@@ -63,25 +65,18 @@ Existing Codebase (no docs)
 
 | Command | Output | Description |
 |---------|--------|-------------|
-| `/lean` | MVP/Feature analysis | **Lean analysis + Phase Breakdown + GATE 1** |
+| `/lean` | MVP/Feature analysis | **Lean analysis: MVP definition or feature improvement** |
 | `/ipa:user-research` | docs/USER_RESEARCH.md | User personas & journey maps (before /lean) |
 | `/ipa:init` | All docs | Extract IPA docs from existing codebase |
-| `/ipa:spec` | SRD.md + UI_SPEC.md | **Stage 1: Requirements + UI Specs + GATE 2** |
-| `/ipa:design` | prototypes/html-mockups/ | **Stage 2: Generate HTML mockups + GATE 3** |
-| `/ipa:detail` | API_SPEC.md + DB_DESIGN.md | **Stage 3: Detail Design (API, DB)** |
+| `/ipa:srd` | docs/SRD.md | System Requirement Definition (15 sections) |
+| `/ipa:bd` | docs/UI_SPEC.md | Basic Design (screens, flows, design rationale) |
+| `/ipa:dd` | docs/API_SPEC.md, docs/DB_DESIGN.md | Detail Design (API, DB) |
+| `/ipa:design` | prototypes/html-mockups/ | Generate HTML mockups from UI_SPEC |
 | `/ipa:mockup-analyze` | docs/UI_DESIGN_SPEC.md | Extract design specs from mockups (AI vision) |
-| `/ipa:all` | All above | ⚠️ **Legacy: Skips validation gates** |
+| `/ipa:all` | All above | Generate all IPA docs in sequence |
 | `/ipa:validate` | Validation report | Validate IPA docs consistency & traceability |
 | `/ipa:analyze-usage` | plans/reports/usage-analysis-*.md | Post-launch usage analytics |
 | `/docs:sync` | Update docs/ | Sync docs with actual implementation |
-
-### Validation Gates
-
-| Gate | After | Checklist |
-|------|-------|-----------|
-| GATE 1 | `/lean` | 3+ user interviews, scope ≤ 3 phases |
-| GATE 2 | `/ipa:spec` | Stakeholder review, priorities confirmed |
-| GATE 3 | `/ipa:design` | 5+ user testing, issues addressed |
 
 ---
 
@@ -93,18 +88,6 @@ Existing Codebase (no docs)
 3. ✅ Detect project type and create task files accordingly
 4. ✅ If UI layer exists, ensure docs/UI_DESIGN_SPEC.md exists (run /ipa:mockup-analyze if not)
 5. ✅ Follow the workflow's output structure exactly
-
-### IPA Skills Activation
-
-When this is an IPA project (docs/SRD.md exists):
-- `/plan*` commands → Activate `ipa-planner` skill (`.claude/skills/ipa-planner/SKILL.md`)
-- `/docs:sync` → Activate `ipa-docs` skill (`.claude/skills/ipa-docs/SKILL.md`)
-
-**How it works:**
-1. Global agent reads this CLAUDE.md
-2. Detects IPA project (docs/SRD.md exists)
-3. Reads and applies skill content
-4. IPA-specific rules (traceability, TDD, gates) activated
 
 ### Phase-First Structure (MANDATORY - Project Override)
 
@@ -344,5 +327,6 @@ mkdir -p .claude/commands/{category}
 ## REFERENCES
 
 - Task Distribution: `.claude/workflows/multi-model-task-distribution.md`
-- Skills: `.claude/skills/` (ipa-planner, ipa-docs, context-aware-planning, ipa-validator, lean-analyst)
+- Agents: `.claude/agents/` (planner.md, docs-manager.md)
+- Skills: `.claude/skills/` (context-aware-planning, ipa-validator, lean-analyst)
 - Commands: `.claude/commands/` (ipa/, docs/, lean.md)

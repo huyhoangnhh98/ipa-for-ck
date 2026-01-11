@@ -1,22 +1,6 @@
 ---
-description: ⚠️ DEPRECATED - Generate all IPA docs (skips validation gates)
-argument-hint: (no arguments)
----
-
-> **⚠️ DEPRECATION WARNING**
->
-> This command skips validation gates (GATE 1/2/3).
->
-> **Recommended flow:**
-> ```
-> /lean → /ipa:spec → /ipa:design → /ipa:detail
-> ```
->
-> Use `/ipa:all` only for:
-> - Rapid prototyping (throwaway code)
-> - Existing projects with established docs
-> - Power users who understand the risks
-
+description: Generate all IPA docs (SRD → BD → DD) in sequence
+argument-hint: [requirements or requirements-file-path]
 ---
 
 ## Purpose

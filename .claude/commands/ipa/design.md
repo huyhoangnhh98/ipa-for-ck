@@ -455,6 +455,17 @@ Iterate: /ipa:design S-xx "fix..."
 
 ---
 
+## 🚦 GATE 3: Design Validation
+
+Before proceeding to `/ipa:detail`:
+
+- [ ] User testing completed with 5+ users
+- [ ] Usability issues logged
+- [ ] Critical issues addressed in mockups
+- [ ] Design matches MVP scope (no gold plating)
+
+**Next:** `/ipa:detail`
+
 ## Validation Report
 
 After generation:

@@ -130,6 +130,35 @@ Generate structured output ready for `/ipa:srd` or `/plan`
 |----------|---------|------------|--------|------------|
 | P1 | [Feature] | [Value] | [Screen name] | [Assumption] |
 
+## Implementation Phases (Estimated)
+| Phase | Focus | Key Features | Effort |
+|-------|-------|--------------|--------|
+| 1 | Core | [Main features] | S/M/L |
+| 2 | Enhancement | [Secondary features] | S/M/L |
+
+## Plan Structure Preview
+```
+plans/{date}-{slug}/
+├── plan.md
+├── phase-01-core/
+│   ├── core.md
+│   └── ui.md
+└── phase-02-enhancement/
+    └── tasks.md
+```
+
+## 🚦 GATE 1: Scope Validation
+
+Before proceeding to `/ipa:spec`, complete this checklist:
+
+- [ ] Talked to 3+ potential users about the problem
+- [ ] Users confirmed this is a real pain point
+- [ ] MVP scope acceptable (≤ 3 phases recommended)
+- [ ] Assumptions documented for later validation
+- [ ] Team aligned on priorities
+
+**⚠️ Do NOT proceed if scope > 3 phases without re-scoping**
+
 ## MVP Screens (→ IPA Screen List S-xx)
 | Screen | Purpose | Features |
 |--------|---------|----------|
@@ -165,7 +194,8 @@ Generate structured output ready for `/ipa:srd` or `/plan`
 | [Risk] | [Impact] | [Mitigation] |
 
 ## Next Step
-→ Run `/ipa:srd` with this analysis to generate full SRD
+After GATE 1 validation:
+→ Run `/ipa:spec` to generate SRD.md + UI_SPEC.md
 ```
 
 ### For Feature Improvement Mode:

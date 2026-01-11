@@ -1,6 +1,12 @@
 ---
-description: Generate System Requirement Definition (SRD) from raw requirements - IPA Standard
-argument-hint: [requirements or requirements-file-path]
+description: Generate SRD.md only (use /ipa:spec for full Stage 1)
+argument-hint: [feature description or lean output]
+---
+
+> **💡 TIP:** Use `/ipa:spec` instead to generate both SRD.md + UI_SPEC.md in one step.
+>
+> This command is kept for granular control when you only need SRD.md.
+
 ---
 
 ## Purpose

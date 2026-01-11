@@ -1,5 +1,12 @@
 ---
-description: Generate Detail Design (INTERFACE_SPEC, DB_DESIGN) - Multi-Platform
+description: Generate API_SPEC.md + DB_DESIGN.md (alias for /ipa:detail)
+argument-hint: (no arguments)
+---
+
+> **💡 TIP:** `/ipa:detail` is the new canonical name for this command.
+>
+> Both commands produce the same output. `/ipa:dd` is kept for backward compatibility.
+
 ---
 
 ## Purpose

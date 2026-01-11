@@ -1,6 +1,14 @@
 ---
-description: Generate Basic Design (UX_SPEC) from SRD with CJX - Multi-Platform
-argument-hint: [reference-url or image-path]
+description: Generate UI_SPEC.md only (use /ipa:spec for full Stage 1)
+argument-hint: (no arguments)
+---
+
+> **💡 TIP:** Use `/ipa:spec` instead to generate both SRD.md + UI_SPEC.md in one step.
+>
+> This command is kept for granular control when you only need UI_SPEC.md.
+>
+> **Prerequisite:** `docs/SRD.md` must exist.
+
 ---
 
 ## Purpose
