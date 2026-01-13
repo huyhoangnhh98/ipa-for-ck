@@ -115,7 +115,7 @@ cp -r ipa-template/.claude your-project/
 │  └──────┬──────┘                                                           │
 │         ↓                                                                   │
 │  ┌─────────────┐     ┌──────────────────────────────────────┐              │
-│  │ /ipa:       │ ──→ │ Usage Analysis                       │              │
+│  │ /lean:      │ ──→ │ Usage Analysis                       │              │
 │  │ analyze-    │     │ • Feature adoption                   │              │
 │  │ usage       │     │ • Drop-off points                    │              │
 │  └──────┬──────┘     │ • Recommendations                    │              │
@@ -135,12 +135,15 @@ cp -r ipa-template/.claude your-project/
 
 ### Pre-Development (Analysis & Planning)
 
+#### Lean Commands
+
 | Command | Output | Description | When to Use |
 |---------|--------|-------------|-------------|
-| `/ipa:user-research` | USER_RESEARCH.md | Personas, journey maps | Before /lean (optional) |
+| `/lean:user-research` | USER_RESEARCH.md | Personas, journey maps | Before /lean (optional) |
 | `/lean` | MVP/Feature analysis | MVP definition OR feature improvement (auto-detect) | Idea validation, feature planning |
+| `/lean:analyze-usage` | usage-analysis-*.md | Post-launch usage analytics | After launch (30+ days) |
 
-### IPA Documentation (Staged)
+#### IPA Documentation (Staged)
 
 | Command | Output | Description | Gate |
 |---------|--------|-------------|------|

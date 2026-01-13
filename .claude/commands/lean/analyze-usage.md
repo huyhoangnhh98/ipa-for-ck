@@ -172,7 +172,7 @@ Launch MVP
     ↓
 Collect usage data (30+ days)
     ↓
-/ipa:analyze-usage → plans/reports/usage-analysis-{date}.md
+/lean:analyze-usage → plans/reports/usage-analysis-{date}.md
     ↓
 /lean [improvement] → Next iteration
     ↓

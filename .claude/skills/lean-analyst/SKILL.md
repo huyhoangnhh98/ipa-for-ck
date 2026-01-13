@@ -10,6 +10,8 @@ Provides Lean Software Development methodology for analyzing ideas and defining 
 ## When to Activate
 
 - `/lean` command execution
+- `/lean:user-research` command execution
+- `/lean:analyze-usage` command execution
 - MVP definition tasks
 - Feature improvement analysis
 - Post-MVP iteration planning
@@ -172,7 +174,7 @@ phase-02-{focus}  # e.g., phase-02-enhancement
 ### DA Workflow Integration
 
 ```
-/ipa:user-research → docs/USER_RESEARCH.md
+/lean:user-research → docs/USER_RESEARCH.md
          ↓
 /lean → MVP definition (data-informed)
          ↓
@@ -180,7 +182,7 @@ phase-02-{focus}  # e.g., phase-02-enhancement
          ↓
 Launch → Collect usage data
          ↓
-/ipa:analyze-usage → Improvement insights
+/lean:analyze-usage → Improvement insights
          ↓
 /lean [improvement] → Next iteration
 ```

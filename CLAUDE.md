@@ -14,7 +14,7 @@ This project uses IPA (Information-technology Promotion Agency, Japan) standards
 ```
 User Research (optional)
     ↓
-/ipa:user-research → docs/USER_RESEARCH.md
+/lean:user-research → docs/USER_RESEARCH.md
     ↓
 Idea + User Insights
     ↓
@@ -32,7 +32,7 @@ Idea + User Insights
     ↓
 Launch MVP
     ↓
-/ipa:analyze-usage → Usage insights
+/lean:analyze-usage → Usage insights
     ↓
 /lean [improvement] → Next iteration
 ```
@@ -61,10 +61,18 @@ Existing Codebase (no docs)
 
 ### Slash Commands
 
+#### Lean Commands
+
 | Command | Output | Description |
 |---------|--------|-------------|
+| `/lean:user-research` | docs/USER_RESEARCH.md | User personas & journey maps (before /lean) |
 | `/lean` | MVP/Feature analysis | **Lean analysis + Phase Breakdown + GATE 1** |
-| `/ipa:user-research` | docs/USER_RESEARCH.md | User personas & journey maps (before /lean) |
+| `/lean:analyze-usage` | plans/reports/usage-analysis-*.md | Post-launch usage analytics |
+
+#### IPA Commands
+
+| Command | Output | Description |
+|---------|--------|-------------|
 | `/ipa:init` | All docs | Extract IPA docs from existing codebase |
 | `/ipa:spec` | SRD.md + UI_SPEC.md | **Stage 1: Requirements + UI Specs + GATE 2** |
 | `/ipa:design` | prototypes/html-mockups/ | **Stage 2: Generate HTML mockups + GATE 3** |
@@ -72,7 +80,6 @@ Existing Codebase (no docs)
 | `/ipa:mockup-analyze` | docs/UI_DESIGN_SPEC.md | Extract design specs from mockups (AI vision) |
 | `/ipa:all` | All above | ⚠️ **Legacy: Skips validation gates** |
 | `/ipa:validate` | Validation report | Validate IPA docs consistency & traceability |
-| `/ipa:analyze-usage` | plans/reports/usage-analysis-*.md | Post-launch usage analytics |
 | `/docs:sync` | Update docs/ | Sync docs with actual implementation |
 
 ### Validation Gates

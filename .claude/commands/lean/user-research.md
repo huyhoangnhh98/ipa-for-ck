@@ -140,7 +140,7 @@ Stages: Discovery → Onboarding → Usage → Retention → Advocacy
 
 **Before /lean:**
 ```
-/ipa:user-research "target users"
+/lean:user-research "target users"
   ↓
 docs/USER_RESEARCH.md
   ↓
