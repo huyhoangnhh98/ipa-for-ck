@@ -1,6 +1,6 @@
 {
   "name": "@huyhoangnhh98/ipa-ck",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "IPA template CLI - Initialize and manage IPA documentation workflow",
   "type": "module",
   "main": "lib/index.js",
