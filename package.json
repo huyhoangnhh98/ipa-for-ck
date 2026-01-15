@@ -1,5 +1,5 @@
 {
-  "name": "ipa-ck",
+  "name": "@huyhoangnhh98/ipa-ck",
   "version": "1.0.0",
   "description": "IPA template CLI - Initialize and manage IPA documentation workflow",
   "type": "module",
@@ -20,6 +20,14 @@
   ],
   "author": "huyhoangnhh98",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyhoangnhh98/ipa-for-ck.git"
+  },
+  "homepage": "https://github.com/huyhoangnhh98/ipa-for-ck#readme",
+  "bugs": {
+    "url": "https://github.com/huyhoangnhh98/ipa-for-ck/issues"
+  },
   "engines": {
     "node": ">=18.0.0"
   },
