@@ -112,7 +112,7 @@ plans/{date}-{slug}/
 
 Use `@path` syntax: `/plan:hard implement login @prototypes/html-mockups/login`
 
-See: `.claude/skills/context-aware-planning/SKILL.md`
+See: `.claude/skills/ipa-context-aware-planning/SKILL.md`
 
 ---
 
