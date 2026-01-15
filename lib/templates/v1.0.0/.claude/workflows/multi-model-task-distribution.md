@@ -193,7 +193,7 @@ When planning UI with `@path` design references:
 ```
 
 **Flow:**
-1. `context-aware-planning` skill activates
+1. `ipa-context-aware-planning` skill activates
 2. Parses HTML/CSS/JS from @path
 3. Generates `{plan-dir}/reports/design-analysis-report.md`
 4. Copies design files to `{plan-dir}/design/`

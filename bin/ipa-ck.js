@@ -20,6 +20,7 @@ program
   .command('init')
   .description('Initialize or update IPA template (auto-detects mode)')
   .option('--dry-run', 'Show what would be done without making changes')
+  .option('--force', 'Override conflicting files (will backup first)')
   .action(init);
 
 program
