@@ -1,0 +1,12 @@
+{
+  "latest": "1.0.0",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "date": "2026-01-15",
+      "notes": "Skills-based architecture, validation gates",
+      "recommended": true
+    }
+  ],
+  "minCliVersion": "1.0.0"
+}

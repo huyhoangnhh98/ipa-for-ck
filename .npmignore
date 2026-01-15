@@ -1,0 +1,18 @@
+# Development
+tests/
+*.test.js
+.eslintrc*
+.prettierrc*
+vitest.config.js
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Misc
+*.log
+.DS_Store
