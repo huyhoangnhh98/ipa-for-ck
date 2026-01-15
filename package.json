@@ -1,0 +1,39 @@
+{
+  "name": "ipa-ck",
+  "version": "1.0.0",
+  "description": "IPA template CLI - Initialize and manage IPA documentation workflow",
+  "type": "module",
+  "main": "lib/index.js",
+  "bin": {
+    "ipa-ck": "./bin/ipa-ck.js"
+  },
+  "scripts": {
+    "test": "vitest",
+    "lint": "eslint lib/"
+  },
+  "keywords": [
+    "ipa",
+    "template",
+    "cli",
+    "claude",
+    "documentation"
+  ],
+  "author": "huyhoangnhh98",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "bin/",
+    "lib/"
+  ],
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^12.0.0",
+    "fs-extra": "^11.0.0",
+    "inquirer": "^9.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.1"
+  }
+}
