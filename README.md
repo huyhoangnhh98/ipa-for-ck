@@ -5,7 +5,7 @@ CLI tool for IPA (Information-technology Promotion Agency) template management.
 ## Installation
 
 ```bash
-npm install -g ipa-ck
+npm install -g @huyhoangnhh98/ipa-ckipa-ck
 ```
 
 ## Quick Start
