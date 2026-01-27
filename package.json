@@ -1,6 +1,6 @@
 {
   "name": "@huyhoangnhh98/ipa-ck",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "IPA template CLI - Initialize and manage IPA documentation workflow",
   "type": "module",
   "main": "lib/index.js",
@@ -39,7 +39,8 @@
     "chalk": "^5.0.0",
     "commander": "^12.0.0",
     "fs-extra": "^11.0.0",
-    "inquirer": "^9.0.0"
+    "inquirer": "^9.0.0",
+    "puppeteer": "^24.36.0"
   },
   "devDependencies": {
     "vitest": "^1.6.1"

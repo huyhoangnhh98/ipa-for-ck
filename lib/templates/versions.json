@@ -1,11 +1,28 @@
 {
-  "latest": "1.2.0",
+  "latest": "1.3.0",
   "versions": [
+    {
+      "version": "1.3.0",
+      "date": "2026-01-25",
+      "notes": "Skills-based (Claude Code 2.x+)",
+      "description": "All IPA commands as .claude/skills/. Claude auto-invokes when relevant. Requires Claude Code with skills support.",
+      "architecture": "skills-only",
+      "warning": "Requires Claude Code with skills support (v2.0+). Not compatible with older Claude Code versions.",
+      "recommended": true
+    },
+    {
+      "version": "1.2.1",
+      "date": "2026-01-25",
+      "notes": "Slash commands (all versions)",
+      "description": "Uses .claude/commands/ for /ipa:* slash commands. Compatible with all Claude Code versions.",
+      "architecture": "commands-with-skills",
+      "recommended": false
+    },
     {
       "version": "1.2.0",
       "date": "2026-01-18",
       "notes": "Custom paths support (.ck.json), import external SRS, modular docs",
-      "recommended": true
+      "recommended": false
     },
     {
       "version": "1.1.0",
